@@ -205,6 +205,91 @@ html {
             text-decoration: underline;
         }
 
+        .page-body {
+            background: #f5f7fb;
+        }
+
+        .page-hero {
+            padding: 140px 20px 80px;
+            background: linear-gradient(135deg, #0f172a, #0056a3);
+            color: #fff;
+            text-align: center;
+        }
+
+        .page-hero-content {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            color: #b8d8ff;
+        }
+
+        .page-hero h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+        }
+
+        .page-hero p {
+            font-size: 18px;
+            color: #e8f2ff;
+            margin-bottom: 24px;
+        }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .download-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        }
+
+        .download-card h3 {
+            color: #0076df;
+            margin-bottom: 8px;
+        }
+
+        .download-meta {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .download-card ul {
+            margin: 12px 0 18px 18px;
+            color: #4b5563;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #0076df;
+            color: white;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: 600;
+        }
+
+        .download-btn:hover {
+            background-color: #0056a3;
+        }
+
+        .page-note {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
         /* Footer */
         footer {
             background-color: #222;
@@ -218,6 +303,10 @@ html {
             .about-images {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .download-grid {
+                grid-template-columns: 1fr;
             }
         }
 
