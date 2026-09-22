@@ -472,3 +472,79 @@ html {
     }
 
 }
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 5% 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-column p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #2b8cff;
+}
+
+.footer-column i {
+    width: 20px;
+    margin-right: 6px;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+
+    border-top: 1px solid #333;
+
+    text-align: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+/* Mobile Footer */
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+        padding: 40px 8% 20px;
+    }
+}
