@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diecast Shop | Sam Turner</title>
+
+    <meta
+        name="description"
+        content="Browse Sam Turner's collection of individually listed NASCAR diecast cars. Contact Sam directly if you're interested in purchasing a car."
+    >
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           DIECAST SHOP
+        ========================= */
+
+        .shop-hero {
+            padding: 140px 20px 60px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        .shop-hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .shop-hero p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+            font-size: 17px;
+        }
+
+        .shop-notice {
+            max-width: 850px;
+            margin: 30px auto 0;
+            padding: 18px 22px;
+            background: #ffffff;
+            border-left: 4px solid #0076df;
+            text-align: left;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .shop-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px 80px;
+        }
+
+        .shop-section h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        .diecast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .diecast-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .diecast-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+        }
+
+        .diecast-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+            background: #eeeeee;
+        }
+
+        .diecast-info {
+            padding: 22px;
+        }
+
+        .diecast-info h3 {
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .diecast-details {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .diecast-price {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .available {
+            background: #e4f7e9;
+            color: #187a35;
+        }
+
+        .sold {
+            background: #eeeeee;
+            color: #777777;
+        }
+
+        .contact-button {
+            display: block;
+            width: 100%;
+            padding: 12px 18px;
+            background: #0076df;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        .contact-button:hover {
+            background: #005eb8;
+        }
+
+        .sold-button {
+            background: #999999;
+            pointer-events: none;
+        }
+
+        .shop-bottom {
+            text-align: center;
+            padding: 50px 20px 80px;
+            background: #f5f5f5;
+        }
+
+        .shop-bottom h2 {
+            margin-bottom: 12px;
+        }
+
+        .shop-bottom p {
+            max-width: 650px;
+            margin: 0 auto 22px;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .shop-hero {
+                padding-top: 110px;
+            }
+
+            .shop-hero h1 {
+                font-size: 34px;
+            }
+
+            .shop-section {
+                padding-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Sam Turner</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="nr2003.html">Paint Schemes</a>
+                <a href="shop.html">Shop</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- SHOP HERO -->
+    <section class="shop-hero">
+
+        <h1>Diecast Shop</h1>
+
+        <p>
+            Browse my collection of individually listed NASCAR diecast cars.
+            Every car is listed separately, and purchases are handled directly
+            through me.
+        </p>
+
+        <div class="shop-notice">
+            <strong>Interested in a car?</strong><br>
+            Click "Contact Me to Buy" on a listing and reach out to me directly.
+            I'll confirm availability and provide the details for the purchase.
+        </div>
+
+    </section>
+
+
+    <!-- DIECAST LISTINGS -->
+    <main class="shop-section">
+
+        <h2>Available Diecasts</h2>
+
+        <div class="diecast-grid">
+
+
+            <!-- =========================
+                 LISTING #1
+            ========================== -->
+
+            <article class="diecast-card">
+
+                <img
+                    src="images/diecast/car1.jpg"
+                    alt="NASCAR diecast car"
+                    class="diecast-image"
+                >
+
+                <div class="diecast-info">
+
+                    <h3>Driver Name #00</h3>
+
+                    <div class="diecast-details">
+                        2024 NASCAR Cup Series<br>
+                        Manufacturer: Lionel Racing<br>
+                        Scale: 1:24<br>
+                        Condition: Loose
+                    </div>
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                    <div class="diecast-price">
+                        $35
+                    </div>
+
+                    <a
+                        href="mailto:YOUR-EMAIL@example.com?subject=Interested%20in%20Driver%20Name%20%2300%20Diecast"
+                        class="contact-button"
+                    >
+                        Contact Me to Buy
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 LISTING #2
+            ========================== -->
+
+            <article class="diecast-card">
+
+                <img
+                    src="images/diecast/car2.jpg"
+                    alt="NASCAR diecast car"
+                    class="diecast-image"
+                >
+
+                <div class="diecast-info">
+
+                    <h3>Driver Name #00</h3>
+
+                    <div class="diecast-details">
+                        2023 NASCAR Cup Series<br>
+                        Manufacturer: Lionel Racing<br>
+                        Scale: 1:24<br>
+                        Condition: Loose
+                    </div>
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                    <div class="diecast-price">
+                        $30
+                    </div>
+
+                    <a
+                        href="mailto:YOUR-EMAIL@example.com?subject=Interested%20in%20Driver%20Name%20%2300%20Diecast"
+                        class="contact-button"
+                    >
+                        Contact Me to Buy
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 LISTING #3
+            ========================== -->
+
+            <article class="diecast-card">
+
+                <img
+                    src="images/diecast/car3.jpg"
+                    alt="NASCAR diecast car"
+                    class="diecast-image"
+                >
+
+                <div class="diecast-info">
+
+                    <h3>Driver Name #00</h3>
+
+                    <div class="diecast-details">
+                        2022 NASCAR Cup Series<br>
+                        Manufacturer: Lionel Racing<br>
+                        Scale: 1:24<br>
+                        Condition: Loose
+                    </div>
+
+                    <span class="status available">
+                        Available
+                    </span>
+
+                    <div class="diecast-price">
+                        $25
+                    </div>
+
+                    <a
+                        href="mailto:YOUR-EMAIL@example.com?subject=Interested%20in%20Driver%20Name%20%2300%20Diecast"
+                        class="contact-button"
+                    >
+                        Contact Me to Buy
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =========================
+                 LISTING #4
+            ========================== -->
+
+            <article class="diecast-card">
+
+                <img
+                    src="images/diecast/car4.jpg"
+                    alt="NASCAR diecast car"
+                    class="diecast-image"
+                >
+
+                <div class="diecast-info">
+
+                    <h3>Driver Name #00</h3>
+
+                    <div class="diecast-details">
+                        2021 NASCAR Cup Series<br>
+                        Manufacturer: Lionel Racing<br>
+                        Scale: 1:24<br>
+                        Condition: Loose
+                    </div>
+
+                    <span class="status sold">
+                        Sold
+                    </span>
+
+                    <div class="diecast-price">
+                        $30
+                    </div>
+
+                    <span class="contact-button sold-button">
+                        Sold
+                    </span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="shop-bottom">
+
+        <h2>Looking for Something Specific?</h2>
+
+        <p>
+            If you're looking for a particular driver, team, number, or diecast,
+            feel free to contact me. I may have one that isn't listed yet.
+        </p>
+
+        <a
+            href="mailto:YOUR-EMAIL@example.com"
+            class="contact-button"
+            style="max-width: 250px; margin: 0 auto;"
+        >
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Sam Turner. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
